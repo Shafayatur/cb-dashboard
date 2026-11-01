@@ -7,7 +7,7 @@ const cpd = H.map(h => { const f = w => D.cost_per_delivered.find(r => r.hub_id 
 const comps = ["Agent pay", "Hold cost", "Return cost"], cc = [C.mid, C.red, C.mut], ct = [C.ink, C.bg, C.bg];
 const brk = H.map(h => { const v = comps.map(c => D.cost_breakdown_w2.find(r => r.hub_id === h.hub_id && r.component === c).bdt_per_delivered); const t = v.reduce((a, b) => a + b, 0);
   return { id: h.hub_id, hub: true, label: h.hub_id, parts: v.map((x, i) => ({ v: x, c: cc[i], t: ct[i] })), end: t.toFixed(1), ec: null }; });
-const budget = D.budget.map(b => ({ id: b.item, label: b.item.replace(/\s*\(.*\)/, ""), parts: [{ v: b.amount_bdt, c: b.type === "Spend" ? C.ink : C.dim }], end: num(b.amount_bdt) }));
+const budget = D.budget.map(b => ({ id: b.item, label: b.item.startsWith("2 Fixed hires") ? "2 hires (H04)" : b.item.startsWith("Move 2 agents") ? "Move 2: H02 to H01" : b.item.startsWith("H03 hold") ? "H03 programme" : b.item.startsWith("Reserve") ? "Reserve" : b.item, parts: [{ v: b.amount_bdt, c: b.type === "Spend" ? C.ink : C.dim }], end: num(b.amount_bdt) }));
 
 function Slope({ focus, pick }) {
   const h = 400;
@@ -68,7 +68,7 @@ export default function Page() {
         <aside className="rail">
           <div><Lab>Week 2 cost per delivered, by component</Lab><Key items={[["Agent pay", C.mid], ["Hold cost", C.red], ["Return cost", C.mut]]} />
             <Stack rows={brk} max={46} row={32} lw={36} rw={44} fmt={v => v.toFixed(1)} sel={hub} pick={pick} /></div>
-          <div><Lab>Budget, BDT. Spend 62,800 of 70,000</Lab><Stack rows={budget} max={43800} row={34} lw={150} rw={56} fmt={() => ""} /></div>
+          <div><Lab>Budget, BDT. Spend 62,800 of 70,000</Lab><Stack rows={budget} max={43800} row={34} lw={120} rw={56} fmt={() => ""} /></div>
         </aside>
       </div>
       <Foot>Cost per delivered = (agent pay + BDT 30 per hold + BDT 55 per return) / deliveries. Savings are forecast, not actuals. Click a hub to highlight it.</Foot>

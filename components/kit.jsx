@@ -9,7 +9,7 @@ export const T = ({ c = C.mut, s, b, ...p }) => <text fill={c} style={{ fontSize
 export const Lab = ({ children }) => <div className="lab">{children}</div>;
 export const Kpi = ({ n, l, r }) => <div><div className={"n" + (r ? " r" : "")}>{n}</div><div className="kl">{l}</div></div>;
 export const Foot = ({ children }) => <p className="foot">{children}</p>;
-export const Key = ({ items }) => <div className="key">{items.map(([l, c]) => <span key={l}><i style={{ background: c }} />{l}</span>)}</div>;
+export const Key = ({ items }) => <div className="key">{items.map(([l, c, stroke]) => <span key={l}><i style={{ background: c, border: stroke ? `1px solid ${stroke}` : undefined }} />{l}</span>)}</div>;
 export function Svg({ h, children }) {
   const ref = useRef(null);
   const [w, setW] = useState(0);
@@ -35,7 +35,7 @@ export function Stack({ rows, max, row = 34, lw = 130, rw = 70, fmt = v => v, se
           <g key={r.id} role={r.hub && pick ? "button" : undefined} tabIndex={r.hub && pick ? 0 : undefined} aria-label={r.hub && pick ? r.id : undefined} opacity={r.hub ? dimmed(sel, r.id) : 1} onClick={() => r.hub && pick && pick(r.id)} onKeyDown={e => { if (r.hub && pick && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); pick(r.id); } }} style={{ cursor: r.hub ? "pointer" : "default" }}>
             <T x={0} y={m + 4} c={C.ink}>{r.label}</T>
             {r.parts.map((p, j) => { const x0 = leftWidth + x(o), wd = x(p.v); o += p.v;
-              return <g key={j}><rect x={x0} y={y + 5} width={wd} height={row - 10} fill={p.c} />{wd > 24 && <T x={x0 + wd / 2} y={m + 4} textAnchor="middle" c={p.t || C.bg}>{fmt(p.v)}</T>}</g>; })}
+              return <g key={j}><rect x={x0} y={y + 5} width={wd} height={row - 10} fill={p.c} stroke={p.stroke} strokeWidth={p.stroke ? 1 : undefined} />{wd > 24 && <T x={x0 + wd / 2} y={m + 4} textAnchor="middle" c={p.t || C.bg}>{fmt(p.v)}</T>}</g>; })}
             {r.end && <T x={leftWidth + x(o) + 8} y={m + 4} c={r.ec || C.mut} b={!!r.ec}>{r.end}</T>}
           </g>);
       });
