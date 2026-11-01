@@ -1,0 +1,1290 @@
+{
+ "hub_summary": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "cluster": "Cluster A",
+   "w1_attempts": 1925,
+   "agents_w1": 11,
+   "w1_util_pct": 62.5,
+   "w2_attempts": 2482,
+   "agents_w2": 10,
+   "w2_util_pct": 88.6,
+   "status": "Above target",
+   "attempts_per_order_w2": 1.07,
+   "agents_current": 10,
+   "agents_plan": 12,
+   "peak_gap_agents": 2,
+   "decision": "Move 2 agents from H02; do not hire",
+   "decision_cost_bdt": 4000,
+   "target_util_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "cluster": "Cluster A",
+   "w1_attempts": 1647,
+   "agents_w1": 11,
+   "w1_util_pct": 53.5,
+   "w2_attempts": 1730,
+   "agents_w2": 11,
+   "w2_util_pct": 56.2,
+   "status": "Spare capacity",
+   "attempts_per_order_w2": 1.07,
+   "agents_current": 11,
+   "agents_plan": 9,
+   "peak_gap_agents": -4,
+   "decision": "Donor hub: give 2 agents to H01",
+   "decision_cost_bdt": 0,
+   "target_util_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "cluster": "Cluster B",
+   "w1_attempts": 2281,
+   "agents_w1": 12,
+   "w1_util_pct": 67.9,
+   "w2_attempts": 3051,
+   "agents_w2": 12,
+   "w2_util_pct": 90.8,
+   "status": "Above target",
+   "attempts_per_order_w2": 1.39,
+   "agents_current": 12,
+   "agents_plan": 12,
+   "peak_gap_agents": 2,
+   "decision": "Hold reduction programme; do not hire",
+   "decision_cost_bdt": 15000,
+   "target_util_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "cluster": "Cluster B",
+   "w1_attempts": 1943,
+   "agents_w1": 9,
+   "w1_util_pct": 77.1,
+   "w2_attempts": 2416,
+   "agents_w2": 9,
+   "w2_util_pct": 95.9,
+   "status": "Above target",
+   "attempts_per_order_w2": 1.08,
+   "agents_current": 9,
+   "agents_plan": 11,
+   "peak_gap_agents": 2,
+   "decision": "Approve 2 Fixed hires",
+   "decision_cost_bdt": 43800,
+   "target_util_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "cluster": "Cluster C",
+   "w1_attempts": 2023,
+   "agents_w1": 11,
+   "w1_util_pct": 65.7,
+   "w2_attempts": 2202,
+   "agents_w2": 11,
+   "w2_util_pct": 71.5,
+   "status": "Spare capacity",
+   "attempts_per_order_w2": 1.1,
+   "agents_current": 11,
+   "agents_plan": 11,
+   "peak_gap_agents": -2,
+   "decision": "No hiring; coach 3 high-return agents",
+   "decision_cost_bdt": 0,
+   "target_util_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "cluster": "Cluster C",
+   "w1_attempts": 1870,
+   "agents_w1": 10,
+   "w1_util_pct": 66.8,
+   "w2_attempts": 2025,
+   "agents_w2": 9,
+   "w2_util_pct": 80.4,
+   "status": "On target",
+   "attempts_per_order_w2": 1.07,
+   "agents_current": 9,
+   "agents_plan": 9,
+   "peak_gap_agents": 0,
+   "decision": "No action; monitor",
+   "decision_cost_bdt": 0,
+   "target_util_pct": 85
+  }
+ ],
+ "util_forecast": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-10-27",
+   "scenario": "Nothing done",
+   "utilisation_pct": 94.6,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-03",
+   "scenario": "Nothing done",
+   "utilisation_pct": 97.4,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-10",
+   "scenario": "Nothing done",
+   "utilisation_pct": 98.4,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-17",
+   "scenario": "Nothing done",
+   "utilisation_pct": 95.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-10-27",
+   "scenario": "Nothing done",
+   "utilisation_pct": 53.7,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-03",
+   "scenario": "Nothing done",
+   "utilisation_pct": 55.4,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-10",
+   "scenario": "Nothing done",
+   "utilisation_pct": 55.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-17",
+   "scenario": "Nothing done",
+   "utilisation_pct": 54.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-10-27",
+   "scenario": "Nothing done",
+   "utilisation_pct": 90.0,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-03",
+   "scenario": "Nothing done",
+   "utilisation_pct": 92.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-10",
+   "scenario": "Nothing done",
+   "utilisation_pct": 93.1,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-17",
+   "scenario": "Nothing done",
+   "utilisation_pct": 91.2,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-10-27",
+   "scenario": "Nothing done",
+   "utilisation_pct": 96.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-03",
+   "scenario": "Nothing done",
+   "utilisation_pct": 99.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-10",
+   "scenario": "Nothing done",
+   "utilisation_pct": 100.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-17",
+   "scenario": "Nothing done",
+   "utilisation_pct": 97.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-10-27",
+   "scenario": "Nothing done",
+   "utilisation_pct": 69.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-03",
+   "scenario": "Nothing done",
+   "utilisation_pct": 71.6,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-10",
+   "scenario": "Nothing done",
+   "utilisation_pct": 72.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-17",
+   "scenario": "Nothing done",
+   "utilisation_pct": 70.2,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-10-27",
+   "scenario": "Nothing done",
+   "utilisation_pct": 78.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-03",
+   "scenario": "Nothing done",
+   "utilisation_pct": 81.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-10",
+   "scenario": "Nothing done",
+   "utilisation_pct": 82.1,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-17",
+   "scenario": "Nothing done",
+   "utilisation_pct": 79.7,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-10-27",
+   "scenario": "With the plan",
+   "utilisation_pct": 78.8,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-03",
+   "scenario": "With the plan",
+   "utilisation_pct": 81.2,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-10",
+   "scenario": "With the plan",
+   "utilisation_pct": 82.0,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-17",
+   "scenario": "With the plan",
+   "utilisation_pct": 79.6,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-10-27",
+   "scenario": "With the plan",
+   "utilisation_pct": 65.7,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-03",
+   "scenario": "With the plan",
+   "utilisation_pct": 67.7,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-10",
+   "scenario": "With the plan",
+   "utilisation_pct": 68.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-17",
+   "scenario": "With the plan",
+   "utilisation_pct": 66.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-10-27",
+   "scenario": "With the plan",
+   "utilisation_pct": 87.6,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-03",
+   "scenario": "With the plan",
+   "utilisation_pct": 85.8,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-10",
+   "scenario": "With the plan",
+   "utilisation_pct": 84.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-17",
+   "scenario": "With the plan",
+   "utilisation_pct": 82.8,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-10-27",
+   "scenario": "With the plan",
+   "utilisation_pct": 85.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-03",
+   "scenario": "With the plan",
+   "utilisation_pct": 81.7,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-10",
+   "scenario": "With the plan",
+   "utilisation_pct": 82.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-17",
+   "scenario": "With the plan",
+   "utilisation_pct": 80.1,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-10-27",
+   "scenario": "With the plan",
+   "utilisation_pct": 69.5,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-03",
+   "scenario": "With the plan",
+   "utilisation_pct": 71.6,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-10",
+   "scenario": "With the plan",
+   "utilisation_pct": 72.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-17",
+   "scenario": "With the plan",
+   "utilisation_pct": 70.2,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-10-27",
+   "scenario": "With the plan",
+   "utilisation_pct": 78.9,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-03",
+   "scenario": "With the plan",
+   "utilisation_pct": 81.3,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-10",
+   "scenario": "With the plan",
+   "utilisation_pct": 82.1,
+   "target_pct": 85
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-17",
+   "scenario": "With the plan",
+   "utilisation_pct": 79.7,
+   "target_pct": 85
+  }
+ ],
+ "staffing_forecast": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-10-27",
+   "expected_orders": 2470,
+   "attempts_per_order": 1.07,
+   "required_agents": 12,
+   "available_agents": 10,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-03",
+   "expected_orders": 2545,
+   "attempts_per_order": 1.07,
+   "required_agents": 12,
+   "available_agents": 10,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-10",
+   "expected_orders": 2570,
+   "attempts_per_order": 1.07,
+   "required_agents": 12,
+   "available_agents": 10,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week_start": "2026-11-17",
+   "expected_orders": 2495,
+   "attempts_per_order": 1.07,
+   "required_agents": 12,
+   "available_agents": 10,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-10-27",
+   "expected_orders": 1544,
+   "attempts_per_order": 1.07,
+   "required_agents": 7,
+   "available_agents": 11,
+   "staffing_gap": -4
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-03",
+   "expected_orders": 1591,
+   "attempts_per_order": 1.07,
+   "required_agents": 8,
+   "available_agents": 11,
+   "staffing_gap": -3
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-10",
+   "expected_orders": 1606,
+   "attempts_per_order": 1.07,
+   "required_agents": 8,
+   "available_agents": 11,
+   "staffing_gap": -3
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week_start": "2026-11-17",
+   "expected_orders": 1559,
+   "attempts_per_order": 1.07,
+   "required_agents": 8,
+   "available_agents": 11,
+   "staffing_gap": -3
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-10-27",
+   "expected_orders": 2170,
+   "attempts_per_order": 1.39,
+   "required_agents": 13,
+   "available_agents": 12,
+   "staffing_gap": 1
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-03",
+   "expected_orders": 2230,
+   "attempts_per_order": 1.39,
+   "required_agents": 14,
+   "available_agents": 12,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-10",
+   "expected_orders": 2245,
+   "attempts_per_order": 1.39,
+   "required_agents": 14,
+   "available_agents": 12,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week_start": "2026-11-17",
+   "expected_orders": 2200,
+   "attempts_per_order": 1.39,
+   "required_agents": 13,
+   "available_agents": 12,
+   "staffing_gap": 1
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-10-27",
+   "expected_orders": 2264,
+   "attempts_per_order": 1.08,
+   "required_agents": 11,
+   "available_agents": 9,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-03",
+   "expected_orders": 2333,
+   "attempts_per_order": 1.08,
+   "required_agents": 11,
+   "available_agents": 9,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-10",
+   "expected_orders": 2356,
+   "attempts_per_order": 1.08,
+   "required_agents": 11,
+   "available_agents": 9,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week_start": "2026-11-17",
+   "expected_orders": 2287,
+   "attempts_per_order": 1.08,
+   "required_agents": 11,
+   "available_agents": 9,
+   "staffing_gap": 2
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-10-27",
+   "expected_orders": 1955,
+   "attempts_per_order": 1.1,
+   "required_agents": 9,
+   "available_agents": 11,
+   "staffing_gap": -2
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-03",
+   "expected_orders": 2015,
+   "attempts_per_order": 1.1,
+   "required_agents": 10,
+   "available_agents": 11,
+   "staffing_gap": -1
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-10",
+   "expected_orders": 2035,
+   "attempts_per_order": 1.1,
+   "required_agents": 10,
+   "available_agents": 11,
+   "staffing_gap": -1
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week_start": "2026-11-17",
+   "expected_orders": 1975,
+   "attempts_per_order": 1.1,
+   "required_agents": 10,
+   "available_agents": 11,
+   "staffing_gap": -1
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-10-27",
+   "expected_orders": 1852,
+   "attempts_per_order": 1.07,
+   "required_agents": 9,
+   "available_agents": 9,
+   "staffing_gap": 0
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-03",
+   "expected_orders": 1909,
+   "attempts_per_order": 1.07,
+   "required_agents": 9,
+   "available_agents": 9,
+   "staffing_gap": 0
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-10",
+   "expected_orders": 1928,
+   "attempts_per_order": 1.07,
+   "required_agents": 9,
+   "available_agents": 9,
+   "staffing_gap": 0
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week_start": "2026-11-17",
+   "expected_orders": 1871,
+   "attempts_per_order": 1.07,
+   "required_agents": 9,
+   "available_agents": 9,
+   "staffing_gap": 0
+  }
+ ],
+ "holds_w2": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "side": "Agent-side",
+   "holds": 32
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "side": "Customer-side",
+   "holds": 136
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "side": "Agent-side",
+   "holds": 26
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "side": "Customer-side",
+   "holds": 97
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "side": "Agent-side",
+   "holds": 563
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "side": "Customer-side",
+   "holds": 311
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "side": "Agent-side",
+   "holds": 40
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "side": "Customer-side",
+   "holds": 142
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "side": "Agent-side",
+   "holds": 49
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "side": "Customer-side",
+   "holds": 137
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "side": "Agent-side",
+   "holds": 30
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "side": "Customer-side",
+   "holds": 116
+  }
+ ],
+ "h03_hold_reasons": [
+  {
+   "hub_id": "H03",
+   "hold_reason": "Late Dispatch",
+   "side": "Agent-side",
+   "holds": 312
+  },
+  {
+   "hub_id": "H03",
+   "hold_reason": "Customer Unreachable",
+   "side": "Customer-side",
+   "holds": 156
+  },
+  {
+   "hub_id": "H03",
+   "hold_reason": "Not Attempted",
+   "side": "Agent-side",
+   "holds": 132
+  },
+  {
+   "hub_id": "H03",
+   "hold_reason": "Agent Time Shortage",
+   "side": "Agent-side",
+   "holds": 119
+  },
+  {
+   "hub_id": "H03",
+   "hold_reason": "Customer Rescheduled",
+   "side": "Customer-side",
+   "holds": 92
+  },
+  {
+   "hub_id": "H03",
+   "hold_reason": "Address Incomplete",
+   "side": "Customer-side",
+   "holds": 63
+  }
+ ],
+ "held_outcomes": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "outcome": "Delivered",
+   "share_pct": 88.8
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "outcome": "Returned",
+   "share_pct": 2.6
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "outcome": "Still on hold",
+   "share_pct": 8.6
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "outcome": "Delivered",
+   "share_pct": 89.5
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "outcome": "Returned",
+   "share_pct": 4.4
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "outcome": "Still on hold",
+   "share_pct": 6.1
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "outcome": "Delivered",
+   "share_pct": 76.3
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "outcome": "Returned",
+   "share_pct": 13.9
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "outcome": "Still on hold",
+   "share_pct": 9.8
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "outcome": "Delivered",
+   "share_pct": 86.1
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "outcome": "Returned",
+   "share_pct": 4.7
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "outcome": "Still on hold",
+   "share_pct": 9.2
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "outcome": "Delivered",
+   "share_pct": 80.2
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "outcome": "Returned",
+   "share_pct": 11.4
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "outcome": "Still on hold",
+   "share_pct": 8.3
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "outcome": "Delivered",
+   "share_pct": 86.1
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "outcome": "Returned",
+   "share_pct": 4.1
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "outcome": "Still on hold",
+   "share_pct": 9.8
+  }
+ ],
+ "return_ratio_w2": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "attempts_w2": 2482,
+   "returns_w2": 104,
+   "return_ratio_pct": 4.2
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "attempts_w2": 1730,
+   "returns_w2": 75,
+   "return_ratio_pct": 4.3
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "attempts_w2": 3051,
+   "returns_w2": 196,
+   "return_ratio_pct": 6.4
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "attempts_w2": 2416,
+   "returns_w2": 123,
+   "return_ratio_pct": 5.1
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "attempts_w2": 2202,
+   "returns_w2": 236,
+   "return_ratio_pct": 10.7
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "attempts_w2": 2025,
+   "returns_w2": 85,
+   "return_ratio_pct": 4.2
+  }
+ ],
+ "high_return_agents": [
+  {
+   "agent_id": "A1045",
+   "agent_name": "Belis Rowntree",
+   "hub_id": "H05",
+   "salary_type": "Variable",
+   "tenure_days": 463,
+   "attempts": 349,
+   "returns": 94,
+   "return_ratio_pct": 26.9
+  },
+  {
+   "agent_id": "A1046",
+   "agent_name": "Coris Halvorsen",
+   "hub_id": "H05",
+   "salary_type": "Fixed",
+   "tenure_days": 647,
+   "attempts": 414,
+   "returns": 91,
+   "return_ratio_pct": 22.0
+  },
+  {
+   "agent_id": "A1047",
+   "agent_name": "Wenian Vantell",
+   "hub_id": "H05",
+   "salary_type": "Variable",
+   "tenure_days": 526,
+   "attempts": 413,
+   "returns": 72,
+   "return_ratio_pct": 17.4
+  }
+ ],
+ "cost_per_delivered": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week": 1,
+   "cost_per_delivered_bdt": 33.08
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "week": 2,
+   "cost_per_delivered_bdt": 26.56
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week": 1,
+   "cost_per_delivered_bdt": 36.41
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "week": 2,
+   "cost_per_delivered_bdt": 36.16
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week": 1,
+   "cost_per_delivered_bdt": 52.36
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "week": 2,
+   "cost_per_delivered_bdt": 45.67
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week": 1,
+   "cost_per_delivered_bdt": 30.79
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "week": 2,
+   "cost_per_delivered_bdt": 27.62
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week": 1,
+   "cost_per_delivered_bdt": 38.85
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "week": 2,
+   "cost_per_delivered_bdt": 37.33
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week": 1,
+   "cost_per_delivered_bdt": 29.97
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "week": 2,
+   "cost_per_delivered_bdt": 27.07
+  }
+ ],
+ "cost_breakdown_w2": [
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "component": "Agent pay",
+   "bdt": 47944,
+   "bdt_per_delivered": 21.69
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "component": "Hold cost",
+   "bdt": 5040,
+   "bdt_per_delivered": 2.28
+  },
+  {
+   "hub_id": "H01",
+   "hub_name": "Greenfield",
+   "component": "Return cost",
+   "bdt": 5720,
+   "bdt_per_delivered": 2.59
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "component": "Agent pay",
+   "bdt": 47588,
+   "bdt_per_delivered": 31.06
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "component": "Hold cost",
+   "bdt": 3690,
+   "bdt_per_delivered": 2.41
+  },
+  {
+   "hub_id": "H02",
+   "hub_name": "Lakeview",
+   "component": "Return cost",
+   "bdt": 4125,
+   "bdt_per_delivered": 2.69
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "component": "Agent pay",
+   "bdt": 53482,
+   "bdt_per_delivered": 27.0
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "component": "Hold cost",
+   "bdt": 26220,
+   "bdt_per_delivered": 13.24
+  },
+  {
+   "hub_id": "H03",
+   "hub_name": "Riverside",
+   "component": "Return cost",
+   "bdt": 10780,
+   "bdt_per_delivered": 5.44
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "component": "Agent pay",
+   "bdt": 46076,
+   "bdt_per_delivered": 21.83
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "component": "Hold cost",
+   "bdt": 5460,
+   "bdt_per_delivered": 2.59
+  },
+  {
+   "hub_id": "H04",
+   "hub_name": "Hillcrest",
+   "component": "Return cost",
+   "bdt": 6765,
+   "bdt_per_delivered": 3.2
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "component": "Agent pay",
+   "bdt": 47896,
+   "bdt_per_delivered": 26.91
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "component": "Hold cost",
+   "bdt": 5580,
+   "bdt_per_delivered": 3.13
+  },
+  {
+   "hub_id": "H05",
+   "hub_name": "Brookside",
+   "component": "Return cost",
+   "bdt": 12980,
+   "bdt_per_delivered": 7.29
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "component": "Agent pay",
+   "bdt": 39512,
+   "bdt_per_delivered": 22.02
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "component": "Hold cost",
+   "bdt": 4380,
+   "bdt_per_delivered": 2.44
+  },
+  {
+   "hub_id": "H06",
+   "hub_name": "Westwood",
+   "component": "Return cost",
+   "bdt": 4675,
+   "bdt_per_delivered": 2.61
+  }
+ ],
+ "budget": [
+  {
+   "item": "2 Fixed hires for H04 (one-time + salary)",
+   "amount_bdt": 43800,
+   "type": "Spend"
+  },
+  {
+   "item": "Move 2 agents H02 to H01",
+   "amount_bdt": 4000,
+   "type": "Spend"
+  },
+  {
+   "item": "H03 hold reduction programme",
+   "amount_bdt": 15000,
+   "type": "Spend"
+  },
+  {
+   "item": "Reserve (unspent)",
+   "amount_bdt": 7200,
+   "type": "Reserve"
+  }
+ ],
+ "h03_savings": [
+  {
+   "week_start": "2026-10-27",
+   "cumulative_savings_bdt": 2391,
+   "programme_cost_bdt": 15000
+  },
+  {
+   "week_start": "2026-11-03",
+   "cumulative_savings_bdt": 9148,
+   "programme_cost_bdt": 15000
+  },
+  {
+   "week_start": "2026-11-10",
+   "cumulative_savings_bdt": 17805,
+   "programme_cost_bdt": 15000
+  },
+  {
+   "week_start": "2026-11-17",
+   "cumulative_savings_bdt": 26289,
+   "programme_cost_bdt": 15000
+  }
+ ]
+}

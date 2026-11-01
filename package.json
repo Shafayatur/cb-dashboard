@@ -1,0 +1,15 @@
+{
+  "name": "otg-dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "data": "python3 scripts/xlsx_to_json.py data/looker_data_pack.xlsx"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
